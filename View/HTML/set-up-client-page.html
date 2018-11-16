@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link type="text/css" rel="stylesheet" href="../CSS/set-up-page.css">
+<body>
+	<p id="title">Set Up Server</p>
+	<div id="ip-place" class="input-place">
+		<p>IP</p>
+		<input type="text" id="ip-input" class="input-field" placeholder="Enter IP">	
+	</div>
+
+	<div id="port-place" class="input-place">
+		<p>Port</p>
+		<input type="text" id="port-input" class="input-field" placeholder="Enter Port">
+	</div>
+
+	<div id="user-place" class="input-place">
+		<p>User Name</p>
+		<input type="text" id="username-input" class="input-field" placeholder="Enter User Name">
+	</div>
+
+	<div id="id-place" class="input-place">
+		<p>ID</p>
+		<select id="id-input">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+	</div>
+
+	<div style="display: inline-block;float:right;margin-right: 20px;margin-top: 10px;">
+		<button type="button" id="close-btt" class="control-btt" onclick="closeWindow()">Close</button>
+		<button type="button" id="next-btt" class="control-btt" onclick="confirm()">Next</button>
+	</div>
+
+	<script src="../JS/set-up-page-events.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

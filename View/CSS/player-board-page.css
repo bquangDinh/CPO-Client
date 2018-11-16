@@ -1,0 +1,65 @@
+@font-face{
+	font-family: MyriadPro;
+	src: url("../Asset/Font/MyriadPro-Regular.otf");
+}
+
+@font-face{
+	font-family: Roboto-Light;
+	src: url("../Asset/Font/Roboto-Thin.ttf");
+}
+
+@font-face{
+	font-family: Roboto-Thin;
+	src: url("../Asset/Font/Roboto-Light.ttf");
+}
+
+@font-face{
+	font-family: Roboto-Medium;
+	src: url("../Asset/Font/Roboto-Medium.ttf");
+}
+
+@font-face{
+	font-family: Digital;
+	src: url("../Asset/Font/digital-7.ttf");
+}
+
+@font-face{
+	font-family: Skyer;
+	src: url("../Asset/Font/Skyer-Regular.otf");
+}
+
+body,html{
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#name-area{
+	height: 20%;
+	background-color: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#name-text{
+	font-family: MyriadPro;
+	font-size: 12vh;
+	color: white;
+}
+
+
+#score-area{
+	height: 80%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#score-text{
+	font-family: Digital;
+	font-size: 50vh;
+	color: black;
+}

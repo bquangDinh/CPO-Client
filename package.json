@@ -1,0 +1,22 @@
+{
+  "name": "OZ4-Electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . CPO4-Client --overwrite --platform=win32 --arch=x64 --icon=assets\\icons\\win\\iconCPO.ico --out=builds --version-string.ProductName=\"CPO 4 Beta\"",
+    "package-resource": "asar pack builds\\CPO4-Beta-win32-x64\\resources\\app builds\\CPO4-Beta-win32-x64\\resources\\app.asar"
+  },
+  "keywords": [],
+  "author": "Quang Dinh",
+  "license": "ISC",
+  "dependencies": {
+    "colorjoe": "^4.1.0",
+    "electron-log": "^2.2.14",
+    "electron-packager": "^12.1.0",
+    "electron-prebuilt": "^1.4.13",
+    "jquery": "^3.3.1"
+  }
+}

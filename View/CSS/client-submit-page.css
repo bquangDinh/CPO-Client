@@ -1,0 +1,279 @@
+@font-face{
+	font-family: MyriadPro;
+	src: url("../Asset/Font/MyriadPro-Regular.otf");
+}
+
+@font-face{
+	font-family: Roboto-Light;
+	src: url("../Asset/Font/Roboto-Thin.ttf");
+}
+
+@font-face{
+	font-family: Roboto-Thin;
+	src: url("../Asset/Font/Roboto-Light.ttf");
+}
+
+@font-face{
+	font-family: Roboto-Medium;
+	src: url("../Asset/Font/Roboto-Medium.ttf");
+}
+
+@font-face{
+	font-family: Skyer;
+	src: url("../Asset/Font/Skyer-Regular.otf");
+}
+
+html,body{
+	overflow: hidden;
+}
+
+/*EFFECTS*/
+.shadow-hover{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.shadow-hover:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@keyframes translateFromBottom{
+	from{top:300px;opacity: 0}
+	to{top:20px;opacity: 1}
+}
+
+.moveWindow{
+	-webkit-app-region:drag;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */ 
+}
+
+.control-btt{
+	padding: 2px;
+	color: white;
+	float: right;
+}
+
+#current-score{
+	font-family: Roboto-Medium;
+	font-size: 60px;
+	color: #1C1C1C;
+}
+
+.progress-bar{
+	background-color: white;
+	text-align: left;
+}
+
+#current-time{
+	font-family: Roboto-Medium;
+	font-size: 20px;
+	color: #1C1C1C;
+	height: 20px;
+}
+
+.outer{
+	width: 100%;
+	height: 10px;
+	border-radius: 20px;
+	background-color: #1C1C1C;
+}
+
+.inner{
+	height: 6px;
+	border-radius: 20px;
+	background-color: #e74c3c;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+#answer-input{
+	width: 100%;
+	height: 150px;
+	background-color: #1C1C1C;
+	color: white;
+	font-family: Roboto-Medium;
+	font-size: 20px;
+	resize:none;
+	border: 0;
+}
+
+#answer-input:focus{
+	outline: 0;
+}
+
+.send-data-btt{
+	border-width: 0px;
+	width: 120px;
+	height: 50px;
+	background-color: #1C1C1C;
+	color: white;
+	font-family: Roboto-Medium;
+	font-size: 20px;
+	transition: background-color .5s;
+}
+
+.send-data-btt:hover{
+	cursor: pointer;
+	background-color: #e74c3c;
+}
+
+.send-data-btt:focus{
+	outline: 0;
+}
+
+.progress-bar-alarm-container{
+	height: 5px;
+	width: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.progress-bar-alarm-outer{
+	height: inherit;
+	width: 120px;
+	margin-left: -7px;
+	background-color: #1c1c1c;
+}
+
+.progress-bar-alarm-inner{
+	height: inherit;
+	width: 0%;
+	background-color: #ecf0f1;
+}
+
+.panel{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 20px;
+	width: 100%;
+	height: 384px;
+	background-color: white;
+	animation: translateFromBottom .4s;
+}
+
+.unlock{
+	visibility: hidden;
+}
+
+.lock{
+	visibility: visible;
+	color: #e74c3c;
+}
+
+#clr-name-area{
+	background-color: #1C1C1C;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: MyriadPro;
+	font-size: 30px;
+	color: white;
+}
+
+#clr-name-area:hover{
+	cursor: pointer;
+}
+
+#clr-score-area{
+	background-color: black;
+	height: 150px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Skyer;
+	font-size: 60px;
+	color: white;
+}
+
+#clr-score-area:hover{
+	cursor: pointer;
+}
+
+.title{
+	font-family: MyriadPro;
+	font-size: 25px;
+	color: black;
+}
+
+.sub-title{
+	font-family: MyriadPro;
+	font-size: 20px;
+	color: black;
+}
+
+#displays-list{
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.display{
+	width: 300px;
+	height: 200px;
+	border: 1px dashed black;
+	display: inline-block;
+}
+
+.display > .name-of-display{
+	font-family: MyriadPro;
+	font-size: 20px;
+	color: grey;
+	text-align: center;
+}
+
+.display > .select-display-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.display > .select-display-button > button{
+	width: 250px;
+	height: 140px;
+	border: 1px solid grey;
+	color: white;
+	font-family: MyriadPro;
+	font-size: 35px;
+	background-color: #202020;
+	transition: background-color .2s;
+}
+
+.display > .select-display-button > button:focus{
+	outline: 0;
+	border:1px solid yellow;
+}
+
+.display > .select-display-button > button:hover{
+	background-color: #5F5F5F;
+}
+
+#display-selection-message{
+	font-family: MyriadPro;
+	font-size: 18px;
+	color: black;
+}
+
+.player-board-btt{
+	border: 0;
+	background-color: #1c1c1c;
+	color: white;
+	font-family: MyriadPro;
+	display: inline-block;
+}
+
+.deactived:hover{
+	cursor: not-allowed;
+}
+
+.actived:hover{
+	cursor: pointer;
+}

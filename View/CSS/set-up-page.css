@@ -1,0 +1,133 @@
+
+@font-face{
+	font-family: MyriadPro;
+	src: url("../Asset/Font/MyriadPro-Regular.otf");
+}
+
+@font-face{
+	font-family: RobotoThin;
+	src: url("../Asset/Font/Roboto-Thin.ttf");
+}
+
+body,html{
+	text-align: center;
+	margin:0;
+	border:0;
+}
+
+#title{
+	font-family: RobotoThin;
+	font-size: 30px;
+	width: 100%;
+	-webkit-app-region:drag;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */ 
+}
+
+#port-place input,p{
+	display: inline-block;
+}
+
+.input-place p{
+	font-family: MyriadPro;
+	font-size: 20px;
+}
+
+.input-field{
+	font-family: MyriadPro;
+	font-size: 20px;
+
+	border-style: solid;
+	border-color: grey;
+	border-width: 0px 0px 2px 0px;	
+	transition: border-color 0.5s;	
+}
+
+.input-field:focus{
+	outline: 0;
+	border-color: #339EF4;	
+}
+
+.input-field-warning{
+	font-family: MyriadPro;
+	font-size: 20px;
+
+	border-style: solid;
+	border-color: #e74c3c;
+	border-width: 0px 0px 2px 0px;	
+	transition: border-color 0.5s;
+}
+
+.input-field-warning:focus{
+	outline: none;
+	border-color: #339EF4;
+}
+
+#port-place p{
+	position: relative;
+	left:-25px;
+}
+
+#ip-place p{
+	position: relative;
+	left:-25px;
+}
+
+#ip-place input{
+	position: relative;
+	right: -10px;
+}
+
+#user-place p{
+	position: relative;
+	left: -28px;
+}
+
+#user-place input{
+	position: relative;
+	right:27px;
+}
+
+#id-place p{
+	position: relative;
+	left:-28px;
+}
+
+#id-place #id-input{
+	width: 200px;
+	font-family: MyriadPro;
+	font-size: 20px;
+	border-width: 0px 0px 2px 0px;
+	border-color: grey;
+
+	position: relative;
+	right:-10px;
+
+	transition: border-color 0.5s;
+}
+
+#id-place #id-input:focus,hover{
+	border-color: #339EF4;
+	border-width: 2px 0px 0px 0px;
+	outline: 0;
+}
+
+
+.control-btt{
+	font-family: MyriadPro;
+	font-size: 20px;
+	border:0;
+	background-color: transparent;
+
+	color:black;
+	transition: color .5s;
+}
+
+.control-btt:hover{
+	color: #339EF4;
+	cursor: pointer;
+}
+
+.control-btt:focus{
+	outline: none;
+}
